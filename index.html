@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Zealand</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <main>
+        <section class="bg-[url('assets/images/mountain.jpg')] w-full h-screen bg-cover bg-center">
+            <nav class="flex justify-between items-center py-5 px-20">
+                <ion-icon name="search" size="large" class="text-white"></ion-icon>
+
+                <ul class="text-white flex gap-9 text-sm font-medium">
+                    <a href="">Home</a>
+                    <a href="">Timeline</a>
+                    <a href="">Contact</a>
+                    <a href="">About</a>
+                </ul>
+
+                <button
+                    class="bg-gradient-to-l from-[#515d5d] to-[#27393d] text-[#d4cccbe8] py-2 px-6 rounded drop-shadow-xl/15">Schedule
+                    it!</button>
+            </nav>
+            <!-- End of navbar -->
+
+            <!-- Start Hero -->
+            <section class="hero px-32 mt-26">
+                <div
+                    class="w-max flex items-center gap-1 bg-gradient-to-l from-[#515d5d] to-[#27393d] text-[#d4cccbe8] py-2 px-6 rounded drop-shadow-xl/15">
+                    <ion-icon name="calendar" class="text-yellow-300"></ion-icon>
+                    <p class="text-sm font-medium">13 March 2022 - 27 May 2022</p>
+                </div>
+
+                <div class="flex justify-between items-center">
+                    <div class="text-white">
+                        <h2 class="text-[5rem] font-semibold">New Zealand</h2>
+                        <p class="text-5xl -mt-7 text-gray-200">Nature Explore.</p>
+                    </div>
+
+                    <!-- Big Rounded Button -->
+                    <div
+                        class="bg-gradient-to-b from-[#f7df9d] to-[#776a3f] p-1 rounded-full w-44 h-44 flex justify-center items-center relative mb-8">
+                        <div
+                            class="bg-[#564e38] rounded-full w-40 h-40 flex flex-col justify-center items-center text-white text-5xl">
+                            <p>Let's</p>
+                            <p class="flex gap-1 items-center">
+                                Go
+                                <ion-icon name="arrow-forward" class="text-[#f7df9d]"></ion-icon>
+                            </p>
+                        </div>
+
+                        <div
+                            class="bg-gradient-to-b from-[#fff] to-[#776a3f] p-1 rounded-full w-20 h-20 flex justify-center items-center absolute -top-4 left-32">
+                            <div
+                                class="bg-[#433c25] rounded-full w-18 h-18 flex flex-col justify-center items-center text-white text-5xl ">
+                                <ion-icon name="map-outline" class="text-4xl"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of big rounded button -->
+                </div>
+
+                <!-- Hero Footer -->
+                <div class="flex justify-between items-end mt-7">
+                    <div class="w-full text-[#d4cccbe8] flex items-center gap-4 divide-x">
+                        <p class="w-[20rem]">Lorem ipsum dolor sit amet <span class="text-white font-semibold">New
+                                Zealand</span> adipisicing elit. Alias molestiae adipisci unde fugiat
+                            voluptatum.</p>
+                        <p class="w-[20rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestiae
+                            adipisci unde fugiat
+                            voluptatum.</p>
+                    </div>
+
+                    <div class="flex justify-center items-end gap-20">
+                        <div class="flex items-center gap-3">
+                            <p class="text-[#d4cccbe8] font-semibold">01/03</p>
+                            <div class="flex gap-2">
+                                <div class="w-7 h-1 bg-gradient-to-r from-[#776a3f] to-yellow-300 rounded"></div>
+                                <div class="w-14 h-1 bg-gray-600 rounded"></div>
+                                <div class="w-14 h-1 bg-gray-600 rounded"></div>
+                            </div>
+                        </div>
+
+                        <!-- social -->
+                        <div class="text-white flex flex-col gap-3">
+                            <div
+                                class="border-[1px] border-gray-500 flex justify-center items-center rounded-full w-7 h-7">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </div>
+                            <div
+                                class="border-[1px] border-gray-500 flex justify-center items-center rounded-full w-7 h-7">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </div>
+                            <div
+                                class="border-[1px] border-gray-500 flex justify-center items-center rounded-full w-7 h-7">
+                                <ion-icon name="logo-youtube"></ion-icon>
+                            </div>
+                        </div>
+                        <!-- End social -->
+                    </div>
+                </div>
+                <!-- End hero footer -->
+            </section>
+            <!-- End Hero -->
+        </section>
+
+        <!-- Detail -->
+        <section class="bg-[#293b30] w-full px-32 py-15 flex justify-start gap-10">
+            <div class="w-[35rem] flex flex-col gap-3 divide-y divide-gray-600">
+                <div
+                    onclick="changeContent('mountain')"
+                    class="flex items-end py-7 text-4xl bg-gradient-to-b from-[#a7aea9] opacity-60 to-white text-transparent bg-clip-text font-semibold cursor-pointer hover:scale-105 duration-700 transition-all">
+                    <p class="text-lg">01.</p>
+                    <h2 class="uppercase">Mountain</h2>
+                </div>
+
+                <div
+                    onclick="changeContent('river')"
+                    class="flex items-end py-7 text-4xl bg-gradient-to-b from-[#fff] to-white text-transparent bg-clip-text font-semibold cursor-pointer hover:scale-105 duration-700 transition-all">
+                    <p class="text-lg">02.</p>
+                    <h2 class="uppercase">River</h2>
+                </div>
+
+                <div
+                    onclick="changeContent('ocean')"
+                    class="flex items-end py-7 text-4xl bg-gradient-to-b from-[#a7aea9] opacity-60 to-white text-transparent bg-clip-text font-semibold cursor-pointer hover:scale-105 duration-700 transition-all">
+                    <p class="text-lg">03.</p>
+                    <h2 class="uppercase">Ocean</h2>
+                </div>
+            </div>
+
+            <div class="w-[45rem] h-[20rem] bg-gradient-to-r from-[#39463f] to-[#606a64] rounded-2xl">
+                <div class="flex items-center gap-1 py-6 divide-x divide-gray-400 text-[#7d8782] border-b-[1px]">
+                    <p class="px-6 text-white">Overview</p>
+                    <p class="px-6">Gallery</p>
+                    <p class="px-6">Maps</p>
+                </div>
+
+                <div class="px-5 py-5">
+                    <h5 id="content" class="text-white text-4xl duration-700 transition-all">Things you should know about New Zealand's river</h5>
+                    <p class="text-[#7d8782] mt-4 text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae nulla ipsam odio fuga obcaecati
+                        odit, excepturi natus animi reprehenderit quis!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
